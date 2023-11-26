@@ -26,7 +26,7 @@ def truncate_data(filename: list):
 def combine_datasets():
     true_path = os.path.join("real_fake", "True_short.csv")
     fake_path = os.path.join("real_fake", "Fake_short.csv")
-    out_path = os.path.join("real_fake", f"Data_short.csv")
+    out_path = os.path.join("real_fake", "Data_short.csv")
 
     true = pd.read_csv(true_path, index_col=[0]).assign(is_true=1)
     fake = pd.read_csv(fake_path, index_col=[0]).assign(is_true=0)
